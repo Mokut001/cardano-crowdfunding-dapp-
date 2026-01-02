@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cardano Crowdfund</title>
+    <script src="https://unpkg.com/lucid-cardano/dist/lucid.bundle.js"></script>
+    <style>
+        body { font-family: sans-serif; display: flex; justify-content: center; padding: 20px; background: #eee; }
+        .box { background: white; padding: 30px; border-radius: 10px; width: 100%; max-width: 400px; text-align: center; }
+        button { width: 100%; padding: 10px; margin-top: 10px; background: #0033ad; color: white; border: none; border-radius: 5px; }
+        input { width: 94%; padding: 10px; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>Crowdfund DApp</h2>
+        <p id="addr">Connect Wallet</p>
+        <input type="number" id="amt" placeholder="Amount in ADA">
+        <button onclick="contribute()">Contribute ADA</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
