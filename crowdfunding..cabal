@@ -1,0 +1,37 @@
+cabal-version:      2.4
+name:               crowdfunding
+version:            0.1.0.0
+
+common common-all
+    build-depends:    base ^>=4.14.3.0, aeson, bytestring, cardano-api, plutus-ledger-api, plutus-tx, plutus-tx-plugin, serialise
+    default-language: Haskell2010
+    ghc-options:      -Wall -fobject-code -fno-ignore-interface-pragmas -fno-omit-interface-pragmas
+
+library
+    import:           common-all
+    exposed-modules:  Crowdfunding.Contract, Crowdfunding.Types
+    hs-source-dirs:   src
+
+executable crowdfunding-compiler
+    import:           common-all
+    main-is:          Main.hs
+    hs-source-dirs:   app
+    build-depends:    crowdfundingcabal-version:      2.4
+name:               crowdfunding
+version:            0.1.0.0
+
+common common-all
+    build-depends:    base ^>=4.14.3.0, aeson, bytestring, cardano-api, plutus-ledger-api, plutus-tx, plutus-tx-plugin, serialise
+    default-language: Haskell2010
+    ghc-options:      -Wall -fobject-code -fno-ignore-interface-pragmas -fno-omit-interface-pragmas
+
+library
+    import:           common-all
+    exposed-modules:  Crowdfunding.Contract, Crowdfunding.Types
+    hs-source-dirs:   src
+
+executable crowdfunding-compiler
+    import:           common-all
+    main-is:          Main.hs
+    hs-source-dirs:   app
+    build-depends:    crowdfunding
